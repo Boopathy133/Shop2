@@ -10,6 +10,7 @@ import ShopC from './components/ShopC';
 import CartPage from './components/CartPage';
 import AdminPanel from './components/AdminPanel';
 
+
 // Open Admin Panel in a New Window
 const openAdminPanel = () => {
   window.open("/admin", "_blank", "width=600,height=800");  // Adjust dimensions as needed
@@ -27,6 +28,7 @@ function App() {
         <Route path="/shopC" element={<ShopC />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/admin" element={<AdminPanel/>} />
+        {/* <Route path='/admin/:shopName' element={<ShopAdmin />} /> */}
       </Routes>
     </Router>
   );
